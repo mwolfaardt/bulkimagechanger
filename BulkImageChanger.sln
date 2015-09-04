@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkImageChanger", "BulkImageChanger\BulkImageChanger.csproj", "{301AB5A1-4841-4882-9522-248D2A4B4ADA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkImageChanger.Connector.Crm", "BulkImageChanger.Connector.Crm\BulkImageChanger.Connector.Crm.csproj", "{3C7A1771-9B04-46CF-A54D-B0376292033D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{301AB5A1-4841-4882-9522-248D2A4B4ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{301AB5A1-4841-4882-9522-248D2A4B4ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{301AB5A1-4841-4882-9522-248D2A4B4ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C7A1771-9B04-46CF-A54D-B0376292033D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C7A1771-9B04-46CF-A54D-B0376292033D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C7A1771-9B04-46CF-A54D-B0376292033D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C7A1771-9B04-46CF-A54D-B0376292033D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

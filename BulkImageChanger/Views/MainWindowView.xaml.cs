@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Practices.Prism.Mvvm;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,11 +17,11 @@ using System.Windows.Shapes;
 namespace BulkImageChanger.Views
 {
     /// <summary>
-    /// Interaction logic for CrmAuthenticationView.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class CrmAuthenticationView : Window
+    public partial class MainWindowView : Window, IView
     {
-        public CrmAuthenticationView()
+        public MainWindowView()
         {
             InitializeComponent();
         }

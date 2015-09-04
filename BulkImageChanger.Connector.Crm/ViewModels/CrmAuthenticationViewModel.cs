@@ -1,8 +1,10 @@
-﻿namespace BulkImageChanger.ViewModels
+﻿
+namespace BulkImageChanger.Connector.Crm.ViewModels
 {
-    using BulkImageChanger.Model;
-    using BulkImageChanger.Views;
+
+    using BulkImageChanger.Connector.Crm.Model;
     using Microsoft.Practices.Prism.Commands;
+    using Microsoft.Practices.Prism.Interactivity.InteractionRequest;
     using Microsoft.Practices.Prism.Mvvm;
     using System;
     using System.Collections.Generic;
@@ -11,13 +13,14 @@
     using System.Threading.Tasks;
     using System.Windows.Input;
 
-    public class CrmAuthenticationModel : BindableBase
+    public class CrmAuthenticationViewModel : BindableBase
     {
-        private CrmAuthentication crmAuthentication;
+        private CrmAuthenticationModel crmAuthentication;
         public ICommand AuthenticateCommand { get; private set; }
+        public ICommand CancelCommand { get; private set; }
+      
 
-
-        public CrmAuthentication CrmAuthentication
+        public CrmAuthenticationModel CrmAuthentication
         {
             get
             {
@@ -28,16 +31,22 @@
                 SetProperty(ref this.crmAuthentication, value);
             }
         }
-        public CrmAuthenticationModel()
+        public CrmAuthenticationViewModel()
         {
-            this.crmAuthentication = new CrmAuthentication();
+            this.crmAuthentication = new CrmAuthenticationModel();
             this.AuthenticateCommand = new DelegateCommand<object>(this.Authenticate);
+            this.CancelCommand = new DelegateCommand<object>(this.Cancel);
+           
+        }
+
+        private void Cancel(object obj)
+        {
+            string xx = "ss";
         }
 
         private void Authenticate(Object obj)
         {
-            
+
         }
-        
     }
 }

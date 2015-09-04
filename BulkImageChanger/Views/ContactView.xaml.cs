@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Practices.Prism.Mvvm;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,7 @@ namespace BulkImageChanger.Views
     /// <summary>
     /// Interaction logic for ContactView.xaml
     /// </summary>
-    public partial class ContactView : UserControl
+    public partial class ContactView : UserControl, IView 
     {
         public ContactView()
         {
